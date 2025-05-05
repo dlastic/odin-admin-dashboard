@@ -29,7 +29,7 @@
   font-size: 20px;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 12px;
   transition: transform 0.2s ease;
 }
 
@@ -48,12 +48,13 @@
 }
 
 .nav-heading svg {
-  width: 40px;
+  width: 50px;
 }
 
 .nav-bar svg,
-.settings-bar svg {
-  width: 20px;
+.settings-bar svg,
+.header svg {
+  width: 25px;
 }
 
 ul li{
@@ -68,7 +69,94 @@ ul li:hover {
 
 .header {
   height: 200px;
+  min-width: 800px;
   background-color: white;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar,
+.user-greeting {
+  gap: 20px;
+}
+
+.profile-bar,
+.post-actions {
+  gap: 30px;
+}
+
+.search-input {
+  width: 40vw;
+  height: 36px;
+  padding: 0 15px;
+  background-color: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  font-size: 16px;
+  color: #1a202c;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+}
+
+
+.profile-bar p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profile-img-small {
+  width: 50px;
+}
+
+.profile-img-large {
+  width: 70px;
+}
+
+.greeting p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  padding: 10px 20px;
+  background-color: rgb(25, 146, 212);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: rgb(21, 122, 179);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  box-shadow: none;
 }
 
 .main-content {
