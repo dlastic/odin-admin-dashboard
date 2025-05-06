@@ -171,8 +171,8 @@ button:active {
   gap: 20px;
 }
 
-.main-content div {
-  border: 2px solid;
+.main-content h3 {
+  margin-bottom: 10px;
 }
 
 .projects {
@@ -181,13 +181,14 @@ button:active {
 
 .project-cards-container {
   display: grid;
-  padding: 5px;
-  gap: 10px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
   height: 180px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .announcements-container,
@@ -197,11 +198,25 @@ button:active {
   justify-content: space-between;
   gap: 10px;
   padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+
 }
 
-.announcement-card {
-  height: 50px;
+.announcement-card h5 {
+  margin-bottom: 3px;
 }
+
+.announcement-card p {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
 
 .trending-profile {
   height: 40px;
