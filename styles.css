@@ -53,7 +53,8 @@
 
 .nav-bar svg,
 .settings-bar svg,
-.header svg {
+.header svg,
+.card svg {
   width: 25px;
 }
 
@@ -187,7 +188,39 @@ button:active {
 .card {
   height: 180px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 7px;
+  border-left: 7px solid rgb(253 186 18);
+  color: hsl(0deg 0% 38.82%);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card .project-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.card svg,
+.header svg {
+  transition: transform 0.2s ease;
+}
+
+.card .icons {
+  align-self: flex-end;
+  display: flex;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.card svg:hover,
+.header svg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .announcements-container,
@@ -198,7 +231,7 @@ button:active {
   gap: 10px;
   padding: 20px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 7px;
 
 }
 
@@ -228,7 +261,7 @@ hr {
 }
 
 .tag,
-.project-name {
+.trending .project-name {
   font-size: 14px;
 }
 
@@ -236,6 +269,6 @@ hr {
   margin-bottom: 2px;
 }
 
-.project-name {
+.trending .project-name {
   color: grey;
 }
