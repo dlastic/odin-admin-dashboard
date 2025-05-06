@@ -68,10 +68,9 @@ ul li:hover {
 }
 
 .header {
-  height: 200px;
   min-width: 1000px;
   background-color: white;
-  padding: 20px 40px;
+  padding: 15px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,7 +166,7 @@ button:active {
   padding: 20px;
   display: grid;
   grid-template-columns: auto 300px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 20px;
 }
 
@@ -205,6 +204,7 @@ button:active {
 
 .announcement-card h5 {
   margin-bottom: 3px;
+  font-size: 14px;
 }
 
 .announcement-card p {
@@ -217,7 +217,25 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+.trending-container {
+  gap: 15px;
+}
 
 .trending-profile {
-  height: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tag,
+.project-name {
+  font-size: 14px;
+}
+
+.tag {
+  margin-bottom: 2px;
+}
+
+.project-name {
+  color: grey;
 }
